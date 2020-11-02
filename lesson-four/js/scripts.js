@@ -113,17 +113,21 @@ function displayTable(tablePage) {
         start = ((tablePage - 1) * currentNumberRows);
     }
 
-    let end = start + currentNumberRows;
-
     let rows = positionTable.rows.length - 1;
     let rowsPositionTable = document.querySelectorAll('#position_table tbody span');
     let rowsLocationTable = document.querySelectorAll('#location_table tbody span');
     let rowsPriceTable = document.querySelectorAll('#price_table tbody span');
 
     for (let i = 0; i < rows; i++, start++) {
-        rowsPositionTable[i].innerHTML = tableData[start].position;
-        rowsLocationTable[i].innerHTML = tableData[start].position;
-        rowsPriceTable[i].innerHTML = tableData[start].position;
+        if (start < tableData.length) {
+            rowsPositionTable[i].innerHTML = tableData[start].position;
+            rowsLocationTable[i].innerHTML = tableData[start].position;
+            rowsPriceTable[i].innerHTML = tableData[start].position;
+        } else {
+            rowsPositionTable[i].innerHTML = '';
+            rowsLocationTable[i].innerHTML = '';
+            rowsPriceTable[i].innerHTML = '';
+        }
     }
 
 }
