@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/media_query.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="hamburger">
+                <div class="hamburger_layer"></div>
+            </div>
+            <div class="logo">Company Dashboard</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Purchase</a></li>
+                    <li class="stretch"></li>
+                </ul>
+            </nav>
+            <div class="client">
+                <span>George Orwell</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/George_Orwell%2C_c._1940.jpg/170px-George_Orwell%2C_c._1940.jpg" />
+            </div>
+        </div>
+    </header>
+    <div class="tabs">
+        <div class="container">
+            <div data-num="1" class="tabs_item active" onclick="changeTabsAndContent('1')">
+                <i class="fas fa-border-all"></i>
+                <span>Active tab</span>
+            </div>
+            <div data-num="2" class="tabs_item" onclick="changeTabsAndContent('2')">
+                <i class="fas fa-chart-pie"></i>
+                <span>Inactive tab</span>
+            </div>
+            <div data-num="3" class="tabs_item" onclick="changeTabsAndContent('3')">
+                <i class="fas fa-briefcase"></i>
+                <span>Inactive tab</span>
+            </div>
+        </div>
+    </div>
+    <div data-num="1" class="container tab_content">
+        <div class="wrapper">
+            <div class="tables row-13">
+                <table id="position_table" class="table_item">
+                    <thead>
+                        <tr>
+                            <td><span>Position</span></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>some pos #1</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #2</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #3</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #4</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #5</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #6</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #7</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #8</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #9</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #10</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="location_table" class="table_item">
+                    <thead>
+                        <tr>
+                            <td><span>Location</span></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>some pos #1</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #2</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #3</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #4</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #5</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #6</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #7</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #8</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #9</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #10</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="price_table" class="table_item">
+                    <thead>
+                        <tr>
+                            <td><span>Price</span></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>some pos #1</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #2</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #3</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #4</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #5</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #6</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #7</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #8</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #9</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>some pos #10</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="pagination">
+                    <li id="prev_table_page" class="previous">&lt</li>
+                    <ul id="pagination_page" class="pagination">
+
+                    </ul>
+                    <li id="next_table_page" class="next">&gt</li>
+                </ul>
+                <select name="" id="table_row_selector">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+            <div id="card_container">
+
+                <div class="add_button" onclick="changeDialogVisibility()">
+                    <span>+ ADD CARD</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-num="2" class="container tab_content noactive_tab_content">
+        <div class="container">
+            <br>
+            <span>Некоторая статистика</span>
+        </div>
+    </div>
+    <div data-num="3" class="container tab_content noactive_tab_content">
+        <div class="container">
+            <br>
+            <img src="./resources/img/meme2.jpg" alt="Тут должен быть мем" width="400">
+        </div>
+    </div>
+    <div id="add_card_dialog">
+        <div>
+            <span id="close_dialog_button" onclick="changeDialogVisibility()"></span>
+            <h2>New card</h2>
+            <form action="" name="add_card_form">
+                <label class="form_label">name
+                    <br>
+                    <input type="text" name="card_name" id="card_name_input" maxlength="10" required>
+                </label>
+                <label class="form_label">Title
+                    <br>
+                    <input type="text" name="card_title" id="card_title_input" maxlength="10" required>
+                </label>
+                <br>
+                <label class="form_label">Description
+                    <br>
+                    <textarea type="text" name="card_text" id="card_description_input" maxlength="500"
+                        required></textarea>
+                </label>
+                <br>
+                <label for="card_img_file" class="file_button">
+                    <span class="button_span">Browse photo</span>
+                    <span id="file_name_span">Выберите файл</span>
+                    <input type="file" accept="image/*" name="card_img" id="card_img_file" onchange="displayFileName()"
+                        required></label>
+                <br>
+                <input type="button" value="SAVE" id="add_card_button" onclick="addCard()">
+            </form>
+        </div>
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
